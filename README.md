@@ -7,7 +7,7 @@
 # caMicroscope distribution
 
 
-run with `docker-compose -f caMicroscope.yml up`
+run with `docker compose -f caMicroscope.yml up -d`
 
 this will build all services and run in the foreground.
 Use `docker-compose -f caMicroscope.yml build` to rebuild the services.
