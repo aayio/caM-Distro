@@ -37,8 +37,11 @@ services:
       IIP_PATH: "http://ca-iip:8080/fcgi-bin/iipsrv.fcgi"
       MONGO_URI: "mongodb://ca-mongo"
       GENERATE_KEY_IF_MISSING: "true"
+      DISABLE_SEC: "true"
+      ALLOW_PUBLIC: "true"
   iip:
     image: camicroscope/iipimage:version-3.8.4
+    platform: linux/amd64
     container_name: ca-iip
     logging:
       options:
